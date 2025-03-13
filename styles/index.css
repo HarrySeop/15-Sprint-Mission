@@ -1,3 +1,10 @@
+@import url(./reset.css);
+@import url(./typography.css);
+@import url(./header.css);
+@import url(./banner.css);
+@import url(./info.css);
+@import url(./footer.css);
+
 :root {
   /* Primary color */
   --primary-100: #3692ff;
@@ -19,7 +26,7 @@
   --error-500: #f74747;
 
   /* Disable color */
-  --disable-400: #9ca3af;
+  --disable-400: var(--secondary-400);
 
   /* Font style */
   --font-primary: 'Pretendard Variable', sans-serif;
