@@ -39,9 +39,9 @@
   height: 444px;
 }
 
-.info__category {
+.info .info__content .info__category {
   color: var(--primary-100);
-  font-size: 18px !important;
+  font-size: 18px;
 }
 
 .info__title {
