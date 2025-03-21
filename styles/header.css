@@ -23,6 +23,9 @@ picture {
 .header__login {
   width: 128px;
   height: 48px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
   padding: 12px 23px;
   color: white;
   background-color: var(--primary-100);
