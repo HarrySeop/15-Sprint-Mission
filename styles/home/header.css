@@ -11,7 +11,7 @@
   top: 0;
 }
 
-picture {
+.header__logo {
   display: flex;
   align-items: center;
 }
