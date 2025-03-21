@@ -25,7 +25,7 @@
 
   /* Font style */
   --font-primary: 'Pretendard Variable', sans-serif;
-  --font-size-base: 16px;
+  --font-size-base: 1.6rem;
 }
 
 * {
@@ -34,7 +34,10 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-base);
