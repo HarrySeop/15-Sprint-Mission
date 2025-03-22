@@ -16,7 +16,7 @@ export const validateEmail = email => {
   if (!email) {
     return EMAIL_VALIDATION.required_email;
   }
-  return !EMAIL_REGEX.test(email) ? EMAIL_VALIDATION.invalid_email : SYMBOL.empty_message;
+  return !SYMBOL.email_validate_regex.test(email) ? EMAIL_VALIDATION.invalid_email : SYMBOL.empty_message;
 };
 
 /**
