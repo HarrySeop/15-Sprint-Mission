@@ -1,0 +1,18 @@
+pre-commit:
+  parallel: true
+  commands:
+    biome:
+      glob: "*.{js,ts,jsx,tsx,json,jsonc}"
+      run: npx @biomejs/biome check --write {staged_files}
+      stage_fixed: true
+
+pre-push:
+  parallel: true
+  commands:
+    audit-check:
+      run: npm audit
+
+commit-msg:
+  commands:
+    lint-commit-msg:
+      run: npx commitlint --edit {1}
